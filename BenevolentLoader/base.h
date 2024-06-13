@@ -14,7 +14,11 @@
 #include "aes.h"
 
 // If the following line is set, verbose debug messages are printed to the console windows
-// #define VERBOSE
+#ifdef _DEBUG
+#define VERBOSE
+// #else
+// #pragma comment(linker,"/subsystem:\"Windows\" /entry:\"mainCRTStartup\"")
+#endif
 
 /// Macros
 #define STATUS_SUCCESS ((NTSTATUS)0x00000000L)
